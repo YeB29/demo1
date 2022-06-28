@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controller.ReserverenController">
+    <children>
+        <Label fx:id="medewerkerfield" layoutX="271.0" layoutY="220.0" prefHeight="55.0" prefWidth="393.0">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label fx:id="klant" layoutX="259.0" layoutY="294.0" prefHeight="55.0" prefWidth="393.0">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Button id="overzicht" layoutX="388.0" layoutY="422.0" mnemonicParsing="false" onAction="#terug" prefHeight="55.0" prefWidth="177.0" text="Retour" />
+        <Label layoutX="119.0" layoutY="220.0" prefHeight="55.0" prefWidth="155.0" text="Medewerker:">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="122.0" layoutY="294.0" prefHeight="55.0" prefWidth="149.0" text="Klant:">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+    </children>
+
+</AnchorPane>
