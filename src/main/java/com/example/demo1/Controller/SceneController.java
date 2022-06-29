@@ -25,7 +25,7 @@ public abstract class SceneController implements EventHandler<ActionEvent> {
     @Override
     public void handle(ActionEvent event) {
 
-        String stage = ((Node)event.getSource()).getId();
+        Stage stage = new Stage();;
         Parent root;
         FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(SceneController.class.getResource(stage + "-view.fxml")));
         try {
