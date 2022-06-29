@@ -2,6 +2,8 @@ package com.example.demo1;
 
 import com.example.demo1.Model.Login.Login;
 import com.example.demo1.Model.Login.Medewerker;
+import com.example.demo1.Model.Products.PersonenAuto;
+import com.example.demo1.Model.Products.Product;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

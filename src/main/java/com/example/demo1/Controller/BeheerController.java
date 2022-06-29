@@ -19,8 +19,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Observable;
 
-public class BeheerController {
+public class BeheerController extends SceneController {
     @FXML
     private ListView soorten;
 
@@ -53,5 +54,10 @@ public class BeheerController {
         ObservableList<String> item = FXCollections.observableArrayList(producten);
 
         soorten.setItems(item);
+    }
+
+    @Override
+    public void update(Observable o, Object arg) {
+
     }
 }

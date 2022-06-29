@@ -1,6 +1,7 @@
 package com.example.demo1.Controller;
 
 import com.example.demo1.HelloApplication;
+import com.example.demo1.Model.Observer.RentManager;
 import com.example.demo1.Model.Products.Product;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -17,11 +18,13 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.io.PipedReader;
+import java.util.Observable;
+import java.util.Observer;
 
-public class OverzichtController {
+public class OverzichtController extends SceneController implements RentManager {
 
     @FXML
-    private TableView<Product> producten;
+    private TableView<Product> productenItems;
 
     @FXML
     private TableColumn<Product, String> column1;
@@ -40,7 +43,7 @@ public class OverzichtController {
         stage.show();
     }
     public void initialize(){
-        ObservableList<Product> data = FXCollections.observableArrayList(ProductOpslag.getProducten());
+        ObservableList<Product> data = FXCollections.observableArrayList();
 
         column1.setCellValueFactory(new PropertyValueFactory<>("naam"));
 
@@ -48,17 +51,17 @@ public class OverzichtController {
 
         column3.setCellValueFactory(new PropertyValueFactory<>("verhuurd"));
 
-        producten.setItems(data);
+        productenItems.setItems(data);
 
     }
 
     @Override
     public void update() {
-        producten.getItems().removeAll();
-        ObservableList<Product> data = FXCollections.observableArrayList(ProductOpslag.getProducten());
-        producten.setItems(data);
-        producten.refresh();
+
     }
     public void SelectItem(MouseEvent mouseEvent) {
+
     }
+
+
 }

@@ -14,8 +14,9 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Observable;
 
-public class LoginController {
+public class LoginController extends SceneController{
     @FXML
     private Button loginButton;
     @FXML
@@ -39,6 +40,11 @@ public class LoginController {
            stage.show();
        }
        werknemer.setStatusIn();
+
+    }
+
+    @Override
+    public void update() {
 
     }
 }

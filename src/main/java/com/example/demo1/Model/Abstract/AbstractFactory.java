@@ -6,5 +6,5 @@ import java.util.Arrays;
 import java.util.List;
 
 public interface AbstractFactory<T>{
-    T create(String type) throws IOException;
+    T create() throws IOException;
 }
