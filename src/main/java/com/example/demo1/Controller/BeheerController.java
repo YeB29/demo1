@@ -39,7 +39,7 @@ public class BeheerController extends SceneController {
         if(product != -1) {
 
             AnchorPane root =  FXMLLoader.load(HelloApplication.class.getResource( "Toevoegen-view.fxml"));
-            Stage stage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
+            Stage stage = new Stage();
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
